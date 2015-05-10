@@ -1,4 +1,6 @@
-use std::num::Num;
+extern crate num;
+
+use self::num::traits::Num;
 
 pub struct StdGauge<T: Num> {
     pub value: T
